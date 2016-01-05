@@ -3,16 +3,46 @@
   <head>
     <meta charset="UTF-8">
     <title>寿司の注文表</title>
+
+    <style>
+    table{
+      border-collapse: collapse;
+    }
+    th, td{
+      border-collapse: collapse;
+      border: 1px solid #666;
+      padding: 6px 10px;
+    }
+    th{
+      background-color: #ccc;
+    }
+    td:nth-of-type(2){
+      text-align: right;
+    }
+    </style>
   </head>
 
   <body>
     <h1>寿司</h1>
-    <ul>
-      <li>たまご</li>
-      <li>まぐろ</li>
-      <li>えんがわ</li>
-      <li>とろタク巻き</li>
-      <li>うに</li>
-    </ul>
+    <table>
+      <tr>
+        <th>ネタ</th><th>個数</th>
+      </tr>
+      <tr>
+        <td>たまご</td><td>2</td>
+      </tr>
+      <tr>
+        <td>まぐろ</td><td>4</td>
+      </tr>
+      <tr>
+        <td>えんがわ</td><td>4</td>
+      </tr>
+      <tr>
+        <td>とろタク巻き</td><td>1本</td>
+      </tr>
+      <tr>
+        <td>うに</td><td>1本</td>
+      </tr>
+    </table>
   </body>
 </html>
